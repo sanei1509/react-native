@@ -11,7 +11,11 @@ const Stack = createNativeStackNavigator();
 const GrupoFavoritos = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen />
+      <Stack.Screen name="Mi lista" component={Favorito} />
+      <Stack.Screen name="Ingreso a cuenta" component={Login} />
+      <Stack.Screen name="Registro de cuenta" component={Register} />
     </Stack.Navigator>
   );
 };
+
+export default GrupoFavoritos;

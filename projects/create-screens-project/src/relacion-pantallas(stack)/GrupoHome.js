@@ -8,13 +8,13 @@ import Detalle from "../pantallas/Detalle";
 
 const Stack = createNativeStackNavigator();
 
-const HomeStack = () => {
+const GrupoHome = () => {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="home" component={Home} />
-      <Stack.Screen name="detalle" component={Detalle} />
+    <Stack.Navigator initialRouteName="Home">
+      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Detalle" component={Detalle} />
     </Stack.Navigator>
   );
 };
 
-export default HomeStack;
+export default GrupoHome;
